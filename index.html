@@ -1,0 +1,24 @@
+<!-- <script src="./src/index.js"></script> -->
+
+<!-- <script>
+    (function (list) {
+        function require(file) {
+            var exports = {};
+            //创建一个立即执行函数防止污染全局变量
+            (function (exports, code) {
+                eval(code)
+            })(exports, list[file])
+
+            return exports
+        }
+        //入口
+        require('index.js')
+    })({
+        "add.js": `exports.default = function (a, b) {return a + b}`,
+        "index.js": `var add = require("add.js").default
+                    console.log(add(2, 4));`
+    })
+
+</script> -->
+
+<script src="./dist/bundle.js"></script>
